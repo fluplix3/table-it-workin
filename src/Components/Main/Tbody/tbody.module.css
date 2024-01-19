@@ -1,0 +1,68 @@
+.tbody {
+    outline: 1px solid #E9EDF5;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.tbody td:not(:last-child) {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 130px;
+    text-align: left;
+    font-size: 14px;
+    line-height: 20px;
+    color: #464F60;
+}
+
+.tbody>tr>td:not(:first-of-type):not(:last-of-type):not(.blockWithBtnActions):not(:nth-last-child(2)) {
+    margin-right: 20px;
+}
+
+.tbody>tr {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mainLineTbody:nth-child(even) {
+    background-color: #F9FAFC;
+}
+
+.btnActions {
+    position: absolute;
+    right: 10px;
+    top: 22.5px;
+    visibility: hidden;
+}
+
+.mainLineTbody:hover .btnActions {
+    visibility: visible;
+}
+
+.bodyCheckbox {
+    top: 2px;
+}
+
+.mainLineTbody {
+    position: relative;
+    padding-left: 50px;
+    padding-right: 50px;
+    height: 64px;
+}
+
+.mainLineTbody:hover {
+    background-color: #F2F5FA;
+}
+
+.activeRow {
+    border-left: 2px solid;
+    color: var(--blue);
+    background-color: #EBF0FA !important;
+}
+
+.blockWithCheckbox {
+    position: absolute;
+    left: 0;
+}

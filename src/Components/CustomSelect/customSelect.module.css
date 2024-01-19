@@ -1,0 +1,59 @@
+.select {
+  position: relative;
+}
+
+.selectedOption {
+  padding: 4px;
+  background-color: var(--white);
+  background-image: url('../Svg/down.svg');
+  background-repeat: no-repeat;
+  background-position: right center;
+  padding-right: 15px;
+  background-color: rgba(244, 247, 252, 0.75);
+  backdrop-filter: blur(4px);
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 14px;
+  letter-spacing: 0.36px;
+  color: #687182;
+}
+
+.options {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: -200px;
+  border-radius: 4px;
+  padding: 4px;
+  list-style: none;
+  background: var(--white);
+  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.08),
+    0px 5px 10px -5px rgba(17, 24, 38, 0.20),
+    0px 0px 0px 1px rgba(152, 161, 178, 0.10);
+    font-size: 14px;
+}
+
+.option {
+  padding: 4px;
+  cursor: pointer;
+  width: 32px;
+  display: flex;
+  justify-content: center;
+}
+
+.option:hover {
+ background-color: #EBF0FA; 
+}
+
+.selected {
+  border-radius: 4px;
+  background: var(--blue);
+  color: var(--white);
+  cursor: context-menu;
+}
+
+.selected:hover {
+  background: var(--blue);
+}

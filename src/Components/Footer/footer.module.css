@@ -1,0 +1,73 @@
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    padding: 12px 20px;
+    background: var(--gray);
+    backdrop-filter: blur(4px);
+    height: 45px;
+    width: 1020px;
+    outline: 1px solid #E9EDF5;
+}
+
+.blockWithSelect {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.quanityOfPage {
+    font-size: 12px;
+    color: #687182;
+    font-weight: 500;
+    line-height: 18px;
+    letter-spacing: 0.36px;
+}
+
+.blockWithRowsPage,
+.blockWithPageSwitches {
+    display: flex;
+}
+
+.blockWithPageSwitches {
+    align-items: center;
+}
+
+.currentPage {
+    color: #171C26;
+}
+
+.totalPages {
+    margin-right: 5px;
+    margin-left: 10px;
+    width: 25px;
+}
+
+.btnChangePage {
+    display: flex;
+    padding: 2px 4px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+    background: #F7F9FC;
+    box-shadow: 0px 0px 0px 1px rgba(70, 79, 96, 0.24);
+}
+
+.btnNext {
+    transform: rotate(180deg);
+}
+
+.btnNext>svg>path,
+.btnPrev>svg>path {
+    stroke: #464F60;
+}
+
+.btnDisabled {
+    cursor: auto;
+}
+
+.btnDisabled>svg>path {
+    stroke: #868fa0;
+}

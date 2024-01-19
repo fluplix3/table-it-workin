@@ -1,0 +1,36 @@
+.thead {
+    background: rgba(244, 247, 252, 0.75);
+    backdrop-filter: blur(4px);
+    display: flex;
+    padding-right: 50px;
+    padding-left: 50px;
+}
+
+.thead>tr {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.blockWithCheckbox {
+    position: absolute;
+    left: 0;
+}
+
+.headCheckbox {
+    top: -2px;
+}
+
+.headlines {
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 16px;
+    letter-spacing: 0.44px;
+    color: #464F60;
+    background-color: rgba(244, 247, 252, 0.75);
+    text-transform: uppercase;
+    padding: 0;
+    padding-bottom: 10px;
+}

@@ -1,0 +1,50 @@
+.checkbox {
+    position: relative;
+    margin-right: 40px;
+    left: 10px;
+}
+
+.input {
+    position: absolute;
+    opacity: 0;
+    cursor: auto;
+}
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 16px;
+    height: 16px;
+    border-radius: 4px;
+    background: var(--white);
+    box-shadow: 0px 2px 5px 0px rgba(89, 96, 120, 0.10),
+        0px 0px 0px 1px rgba(70, 79, 96, 0.16), 0px 1px 1px 0px rgba(0, 0, 0, 0.10);
+    cursor: auto;
+}
+
+.checkmark:focus-visible {
+    outline: none;
+}
+
+.input:checked+.checkmark {
+    background-color: var(--blue);
+}
+
+.input:focus:checked+.checkmark,
+.checkmark:focus {
+    box-shadow: 0px 2px 5px 0px rgba(89, 96, 120, 0.10), 0px 0px 0px 4px rgba(1, 178, 237, 0.36), 0px 0px 0px 1px rgba(70, 79, 96, 0.16), 0px 1px 1px 0px rgba(0, 0, 0, 0.10);
+}
+
+.input:checked+.checkmark::after {
+    content: "";
+    position: absolute;
+    display: block;
+    left: 6px;
+    top: 2px;
+    width: 4px;
+    height: 8px;
+    border: solid var(--white);
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}
